@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找</title>
+</head>
+<body>
+    <table border="1" width="400" align="center" cellpadding="10"cellspacing="5">
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>city</td>
+            <td>date</td>
+        </tr>
+        <tr>
+            {% for i in user %}
+            <td>{{ i }}</td>
+            {% end %}
+        </tr>
+    </table>
+</body>
+</html>

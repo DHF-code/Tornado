@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seamile</title>
+        <style>
+            body {
+                width: 900px;
+                margin: 0 auto;
+            }
+            .content {
+                float: left;
+                width: 700px;
+            }
+            .sidebar {
+                float: left;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 导航区域 -->
+        <div class="navbar">
+            <a href="#">要闻</a>
+            <a href="#">娱乐</a>
+            <a href="#">财经</a>
+            <a href="#">体育</a>
+            <a href="#">时尚</a>
+        </div>
+
+        <hr />
+
+        <!-- 内容区域 -->
+        <div class="content">
+            {% block AAAAAA %}
+             这里什么内容都没有
+            {% end %}
+        </div>
+
+        <!-- 边栏区域 -->
+        <div class="sidebar">
+            <ul>
+                {% for use in uses %}
+                <li><a href="/test?id={{ use.id }}">{{ use.name }}</a></li>
+                {% end %}
+            </ul>
+        </div>
+    </body>
+</html>
